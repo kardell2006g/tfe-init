@@ -17,7 +17,7 @@ This example illustrates how it may be used by a Terraform Enterprise module, co
 
 ```hcl
 module "tfe_init_fdo" {
-  source = "git::https://github.com/hashicorp/terraform-random-tfe-utility//modules/tfe_init?ref=main"
+  source = "git::https://github.com/kardell2006g/tfe-init?ref=main"
 
   cloud             = "azurerm"
   distribution      = "ubuntu"
