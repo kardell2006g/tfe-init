@@ -174,7 +174,7 @@ apt-get --assume-yes autoremove
 
 echo "[$(date +"%FT%T")] [Terraform Enterprise] Installing TFE FDO" | tee -a $log_pathname
 hostname > /var/log/tfe-fdo.log
-//docker login -u="${registry_username}" -p="${registry_password}" images.releases.hashicorp.com
+#docker login -u="${registry_username}" -p="${registry_password}" images.releases.hashicorp.com
 echo | set /p="${registry_password}" | docker login --username "${registry_username}" --password-stdin images.releases.hashicorp.com
 
 export HOST_IP=$(hostname -i)
